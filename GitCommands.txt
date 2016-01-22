@@ -1,0 +1,43 @@
+
+
+Git commands
+
+git init - to initialised a repository
+===============================================================================
+Make the changes
+add the changes 
+commit the changes in the repository with a messages
+git add . //add the changes made this directory
+git commit -m "Initial commit"
+===============================================================================
+git log //to see logs
+git log -n // to limit number of commit like git log -5 
+git log --since=2012-06-15
+git log --until=2012-06-15
+===============================================================================
+git remote add origin https://github.com/kumarmanoj001/Data.git
+git remote
+git remote -v
+cat .git/config
+git remote rm origin
+===============================================================================
+git config --global http.proxy http://222926:Omkar#0116@proxy.tcs.com:8080
+git config --global https.proxy http://222926:Omkar#0116@proxy.tcs.com:8080
+===============================================================================
+git pull origin master
+git push -u origin master
+===============================================================================
+git branch //shows local branch
+git branch -r //shows remote branch
+git branch -a //shows both branches
+===============================================================================
+
+git ls-tree --full-tree -r HEAD //lists all the files being tracked by your git repo.
+
+git rm hybris-commerce-suite-5.4.0.0.zip
+git commit -m "remove hybris-commerce-suite-5.4.0.0.zip" //delete a file from git repo
+
+to close vi editor. Try ESC:q!.
+
+
+git log --diff-filter=D --summary | grep delete // to see deleted files
